@@ -1,0 +1,183 @@
+/* FOOTER.STYL ======================================= */
+
+#footer
+    padding: 120px 0 100px 0
+    color: white
+    background-color darkBlue
+
+    .container
+        flexbox()
+        flex-flow: column nowrap
+        background: url("../img/backgrounds/footer-bg.svg") center top 20px no-repeat
+        background-size: contain
+
+    h3
+        color: white
+        position relative
+
+
+    .footer__row
+        flexbox()
+        flex-flow: column nowrap
+        justify-content: center
+        text-align: center
+
+        &.footer__row--info
+            flexbox()
+            flex-flow: row wrap
+            justify-content: space-between
+            align-items: center
+
+        &.footer__row--right
+            flexbox()
+            justify-content: flex-end
+            align-items: center
+
+    .footer__wrap
+        flexbox()
+        flex-flow: row nowrap
+
+    .footer__col
+        width: 33%
+        flex-shrink: 0
+
+        &:first-child
+            text-align: left
+
+        &:nth-child(2)
+            text-align: center
+
+        &:last-child
+            text-align: right
+
+        p
+            font-size: 12px
+            line-height: 17px
+            margin-bottom: 40px
+
+    .footer__logo
+        position relative
+        width: 120px
+        height: 110px
+        background: url("../img/shift_dev_logo_white.svg") center no-repeat
+        // background: url("../img/shift-ict-supported.svg") center no-repeat
+        background-size: 120px
+        z-index 10
+        margin-bottom: 40px
+
+    .footer__logo-bg
+        position: relative
+        width: 226px
+        height 116px
+        background: darkBlue url("../img/backgrounds/footer-bg.svg") left center no-repeat
+        background-size: 226px
+        left: 0
+        top: -60px
+        z-index 0
+
+    .footer__item
+        flexbox()
+        align-items: center
+
+    .footer__icon
+        margin-right: 15px
+
+    .footer__text
+        font-size: 16px
+
+    .footer__copyright
+        margin-top: 50px
+        font-size: 12px
+        line-height: 1.5
+
+        span
+            color: gray2
+
+        a
+            color: gray2
+
+            &:hover
+                color: green
+
+    .footer-social
+        margin: 40px auto 40px auto
+        max-width: 360px
+        flexbox()
+        justify-content: space-between
+        align-items: center
+        width: 100%
+
+        a
+
+            svg
+                width: auto
+                height 16px
+                path
+                    fill: white
+                    transition(.3s)
+
+            &:hover svg path
+                fill: green
+
+
+    .footer-previous
+        flexbox()
+        flex-flow: column nowrap
+
+        a
+            font-size: 12px
+            font-weight: 400
+            margin-bottom: 12px
+            color: white
+
+            &:hover
+                color: green
+
+            &:last-child
+                margin-bottom: 0
+
+        .footer-previous__item,
+        .footer-previous__list
+            flexbox()
+            flex-flow: column nowrap
+
+        .footer-previous__item
+            min-width: 120px
+            margin: 0 auto 15px auto
+            cursor: pointer
+            transition(.3s)
+
+            &:hover
+                color: green
+
+        .footer-previous__name
+            font-size: 12px
+            font-weight: 400
+            margin-bottom 2px
+
+            &.footer-previous__name--active
+                font-weight: 900
+                text-decoration: underline
+
+
+
+        .footer-previous__list
+            margin-top 10px
+
+        .footer-previous__box
+            display: none
+            margin-bottom 20px
+
+
+    .contact
+        font-size: 12px
+        font-weight: normal
+        line-height: 17px
+        font-family: font2
+
+        a
+            color: white
+
+            &:hover
+                color: green
+

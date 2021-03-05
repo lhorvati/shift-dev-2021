@@ -1,0 +1,159 @@
+/* TESTIMONIALS.STYL ======================================= */
+
+#testimonials
+    padding: 150px 0 100px 0
+    overflow-x: hidden
+
+    h2
+        position: absolute
+        top: 0
+        margin: 0
+
+    .container
+        position relative
+
+    .testimonials
+        flexbox()
+        flex-flow: column nowrap
+
+        & .testimonials-item:nth-child(odd)
+
+            .testimonials__name
+                color: green
+
+            .testimonials__image
+                right: -150px
+
+            .testimonials__top
+                margin: 0 0 0 35px
+
+            .testimonialsBox
+                padding: 35px 75px 35px 35px
+                background-position: right 20px top 40px
+                background-color: green
+
+                &:before
+                    right 0
+                    border-width: 0 0 50px 50px
+                    border-color: transparent transparent green transparent
+
+
+        & .testimonials-item:nth-child(even)
+
+            .testimonials__name
+                color: blue
+
+            .testimonials__comment
+                margin-left: auto
+
+            .testimonials__image
+                right: auto
+                left - 150px
+
+            .testimonials__top
+                margin: 0 35px 0 auto
+
+            .testimonialsBox
+                padding: 35px 35px 35px 75px
+                background-position left 20px top 40px
+
+                &:before
+                    left 0
+                    border-width: 50px 0 0 50px
+                    border-color: transparent transparent transparent blue
+
+
+
+    .testimonials-item
+        flexbox()
+        position: relative
+        min-height: 460px
+        align-items: flex-end
+        margin-bottom: 50px
+
+        &:last-child
+            margin-bottom: 0
+
+        .testimonials__comment
+            flexbox()
+            flex-flow: column nowrap
+            margin-bottom: 20px
+            position: relative
+            z-index: 2
+
+        .testimonials__top
+            flexbox()
+            flex-flow: column nowrap
+            text-align: left
+
+            .testimonials__name
+                font-size: 17px
+                font-weight: 700
+                color: blue
+                margin-bottom: 5px
+
+            .testimonials__title,
+            .testimonials__company span
+                font-size: 15px
+                font-family: font2
+                color: white
+                flexbox()
+                align-items: center
+
+            .testimonials__company,
+            .testimonials__company img
+                width: auto
+                height 20px
+            .testimonials__company
+                margin-left: 10px
+
+                span
+                    color: blue
+                    font-weight 600
+                    transform: translateY(-4px)
+                    display inline-block
+
+
+
+        .testimonials__image--mobile
+            display: none
+
+        .testimonials__image
+            width: 680px
+            height 460px
+            position: absolute
+            bottom: 0
+            overflow: hidden
+
+            img
+                object-fit: cover
+                max-width fit-content
+                filter: grayscale(100%)
+
+
+
+.testimonialsBox
+    position relative
+    width: 720px
+    box-sizing()
+    color: white
+    font-family: font2
+    font-size: 14px
+    line-height: 29px
+    margin-top: 20px
+    background-color: blue
+    background-image: url(../img/backgrounds/testimonialsQuote-bg.svg)
+    background-repeat: no-repeat
+    background-size: 32px
+
+    &:before
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        border-style: solid
+        top: -48px
+
+
+
+

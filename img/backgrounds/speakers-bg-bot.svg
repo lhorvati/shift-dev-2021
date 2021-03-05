@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="383px" height="249px" viewBox="0 0 383 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="final" transform="translate(-971.000000, -3709.000000)">
+            <g id="BG-+-visual" transform="translate(-180.000000, 769.000000)">
+                <g id="12-footer" transform="translate(220.000000, 2941.000000)">
+                    <g id="Group-14" transform="translate(659.000000, 787.500000) rotate(-180.000000) translate(-659.000000, -787.500000) ">
+                        <g id="Group-37" transform="translate(0.450138, 0.000000)">
+                            <g id="agenda-bg" transform="translate(-0.000000, 0.000000)">
+                                <g id="Group-23" transform="translate(3.000000, 1327.000000)">
+                                    <path d="M183.205681,60.2668023 C183.205681,93.0098079 209.744185,119.554215 242.482516,119.554215 C275.222246,119.554215 301.76075,93.0098079 301.76075,60.2668023 C301.76075,27.5237966 275.222246,0.977988701 242.482516,0.977988701 C209.744185,0.977988701 183.205681,27.5237966 183.205681,60.2668023 Z" id="Clip-35" fill="#FFCF6E"></path>
+                                    <polyline id="Stroke-106" stroke="#FFFFFF" stroke-width="2.8" stroke-linejoin="round" points="264.690936 23.7207096 239.147258 60.2649808 369.974654 247.427919"></polyline>
+                                    <path d="M239.147398,60.2649808 L23.5498621,60.2649808" id="Stroke-108" stroke="#FFFFFF" stroke-width="2.8" stroke-linejoin="round"></path>
+                                    <path d="M378.549862,173 C375.788305,173 373.549862,170.761397 373.549862,168.000103 C373.549862,165.238603 375.788305,163 378.549862,163 C381.311419,163 383.549862,165.238603 383.549862,168.000103 C383.549862,170.761397 381.311419,173 378.549862,173" id="Fill-18" fill="#0FD895" transform="translate(378.549862, 168.000000) rotate(180.000000) translate(-378.549862, -168.000000) "></path>
+                                    <path d="M14.5498621,150 C6.81776294,150 0.549862097,143.732099 0.549862097,136 C0.549862097,128.267901 6.81776294,122 14.5498621,122 C22.2819613,122 28.5498621,128.267901 28.5498621,136 C28.5498621,143.732099 22.2819613,150 14.5498621,150" id="Fill-26" fill="#005DF2" transform="translate(14.549862, 136.000000) rotate(180.000000) translate(-14.549862, -136.000000) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,238 @@
+/* BLOG.STYL ======================================= */
+.blog-bg
+    background: white
+
+    #footer
+        padding: 50px 0 100px 0
+
+#blog
+    padding: 100px 0
+
+    .container
+        position relative
+
+    .btn.green.fill
+        height: auto
+        padding: 17px 50px 15px 50px
+
+        &:hover
+            color: green
+
+    ul
+        margin: 40px 0 0 30px
+
+        li
+            font-size: 20px
+            line-height: 1.5
+            margin-bottom: 10px
+            flexbox()
+            align-items: center
+
+            &:before
+                content: ''
+                width: 7px
+                height: 7px
+                display: block
+                border-radius: 100%
+                border: 2px solid blue
+                position: relative
+                margin-right: 20px
+                margin-bottom: 2px
+
+
+.blog
+    padding-right: 300px
+
+.blog__image
+    width: 100%
+    height auto
+    overflow hidden
+    margin: 20px 0 0 0
+
+.blog__image__desc
+    font-size: 14px
+    color: gray
+    text-align: right
+    margin: 10px 0
+
+.blog__large
+    font-size: 50px
+
+.blog__small
+    font-size: 26px
+    font-weight: 600
+    color: darkBlue
+    margin: 30px 0 20px 0
+    letter-spacing: -1px
+    opacity: .8
+
+.blog__text
+    font-size: 20px
+    line-height: 1.5
+    margin-bottom: 20px
+
+.blog__num
+    font-size: 170px
+    font-weight: 900
+    color: blue
+    opacity: .15
+    position: absolute
+    top: -30px
+    right: 10px
+
+.blog__logo
+    width: 200px
+    height: 60px
+    flexbox()
+    justify-content: flex-start
+    align-items: flex-start
+    margin-bottom: 20px
+
+    img
+        width: auto
+        height: 100%
+
+.blog__btn
+    flexbox()
+    flex-center()
+    margin: 50px 0
+
+    &.blog__btn--mid
+        margin: 50px auto
+
+
+.blog__imagesWrap
+    flexbox()
+    flex-flow: row wrap
+    justify-content: center
+    margin-bottom: 50px
+
+    a
+        flexbox()
+        flex-center()
+        margin: 20px 30px
+
+    img
+        width: 100%
+        height: auto
+
+
+.blogAuthor
+    position: absolute
+    top: 20px
+    right: 0
+    width: 220px
+    height 70px
+    flexbox()
+    flex-center()
+
+    .blogAuthor__image
+        width: 70px
+        height 70px
+        border-radius: 100%
+        overflow: hidden
+
+    .blogAuthor__box
+        width: calc(100% - 70px)
+        padding-left: 20px
+        box-sizing()
+        margin-top 15px
+    
+    .blogAuthor__name
+        font-size: 16px
+        color darkBlue
+        margin-bottom 10px
+
+    .blogAuthor__date
+        color: blue
+        align-self: center
+
+
+.blogWrap
+    margin-top: 80px
+    position: relative
+
+    .blog__speakerImg
+        width: 240px
+        height: 240px
+        float: left
+        margin: 0 20px 20px 0
+
+    h2
+        span
+            font-size: 20px
+            color: gray
+
+
+.header-image
+    width: 100%
+    height: 50vh
+    flexbox()
+    flex-center()
+    overflow: hidden
+
+    &.header-image--schedule
+        background: url(/img/blog/schedule@2x.jpg) no-repeat center
+        background-size: cover
+    &.header-image--speakers
+        background: url(/img/blog/speakers@2x.jpg) no-repeat center
+        background-size: cover
+        margin-top: 100px
+    &.header-image--top10speakers
+        background: url(/img/blog/top-10-speakers@2x.jpg) no-repeat center
+        background-size: cover
+        margin-top: 100px
+
+@media only screen and (max-width: 1500px), only screen and (max-device-width: 1500px) {
+    .header-image.header-image--schedule {
+        background: url(/img/blog/schedule@1x.jpg) no-repeat center
+        background-size: cover
+    }
+    .header-image.header-image--speakers {
+        background: url(/img/blog/speakers@1x.jpg) no-repeat center
+        background-size: cover
+    }
+    .header-image.header-image--top10speakers {
+        background: url(/img/blog/top-10-speakers@1x.jpg) no-repeat center
+        background-size: cover
+    }
+}
+
+
+@media only screen and (max-width: 981px), only screen and (max-device-width: 981px) {
+
+    #blog,
+    .blog {
+        padding: 0
+    }
+    .blogAuthor {
+        position relative
+        margin-left: auto
+    }
+    .blogWrap .blog__speakerImg {
+        float: none
+        margin: 0
+    }
+    .blogWrap h2 {
+        margin: 20px 0
+    }
+    .blog__text {
+        font-size: 16px
+    }
+
+    .header-image {
+        margin-top 60px !important
+    }
+    .header-image.header-image--schedule {
+        background: url(/img/blog/schedule-mobile.jpg) no-repeat center
+        background-size: cover
+    }
+    .header-image.header-image--speakers {
+        background: url(/img/blog/speakers-mobile.jpg) no-repeat center
+        background-size: cover
+    }
+    .header-image.header-image--top10speakers {
+        background: url(/img/blog/top-10-speakers-mobile.jpg) no-repeat center
+        background-size: cover
+    }
+}

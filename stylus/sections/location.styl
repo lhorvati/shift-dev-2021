@@ -1,0 +1,123 @@
+/* LOCATION.STYL ======================================= */
+
+#location
+    padding: 50px 0 150px 0
+    min-height: 720px
+    flexbox()
+    align-items: center
+    flex-flow: column nowrap
+    overflow: visible
+    z-index: 2
+
+    .container
+        position relative
+        flexbox()
+        justify-content: space-between
+
+
+.location
+    flexbox()
+    flex-flow: column nowrap
+    max-width: 360px
+    position relative
+
+    .location__desc
+        flexbox()
+        flex-flow: column nowrap
+
+        &:hover
+            .location__details span
+                color: green
+
+    .location__title
+        font-size: 21px
+        font-weight: 600
+        color: white
+        margin-bottom: 8px
+
+        span
+            color blue
+
+    .location__details
+        flexbox()
+        flex-flow: column nowrap
+
+        span
+            font-size: 14px
+            font-family: font2
+            color: white
+            line-height: 24px
+            transition(.5s)
+
+    
+
+
+    p
+        font-size: 15px
+        font-family: font2
+        color: white
+        text-align: left
+        margin: 22px 0
+
+    
+
+
+.location__map
+    max-width 843px
+    max-height: 559px
+    margin-left: 50px
+
+    img
+        object-fit: cover
+
+
+.location__img1,
+.location__img2,
+.location__bg1,
+.location__bg2
+    position: absolute
+
+.location__img1
+    max-width 492px
+    max-height: 348px
+    left: 0
+    // bottom: -140px
+    bottom: -180px
+
+    &:after
+        //content: ''
+        width: 327px
+        height 336px
+        background: url(../img/backgrounds/location-bg1.svg) center no-repeat
+        background-size: contain
+        bottom: -100px
+        right -100px
+        display: block
+        position absolute
+        bottom: -140px
+        right: -190px
+        z-index 2
+
+.location__img2
+    max-width 477px
+    max-height: 353px
+    right 0
+    bottom: -270px
+
+.location__bg1
+    width: 100%
+    height 100%
+    background: url(../img/backgrounds/location-bg.svg) top center no-repeat
+    background-size: contain
+    z-index -1
+
+.location__bg2
+    width: 327px
+    height 336px
+    bottom: -100px
+    right -100px
+    display: block
+    position absolute
+    bottom: -140px
+    right: -190px
+    z-index 2

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1852px" height="1821px" viewBox="0 0 1852 1821" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>atomic-design</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="atomic-design" transform="translate(52.000000, 52.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="104" cx="858.9" cy="858.5" r="858.4"></circle>
+            <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="858.9" cy="858.5" r="524.8"></circle>
+            <path d="M1799.1,294 C1799.1,417.2 1699.7,516.6 1576.5,516.6 C1453.3,516.6 1353.9,417.2 1353.9,294 C1353.9,170.8 1453.3,71.3998497 1576.5,71.3998497 C1698.7,71.3 1799.1,170.7 1799.1,294 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

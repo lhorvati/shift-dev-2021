@@ -1,0 +1,238 @@
+/* NOTE.STYL ======================================= */
+
+#note
+    padding: 150px 0 100px 0
+    background: darkBlue
+
+    .container
+        flexbox()
+        flex-flow: column nowrap
+
+        h2.large
+            margin-bottom: 50px
+            position relative
+
+            &:before
+                content: ''
+                display: block
+                width: 100px
+                height 4px
+                background: green
+                position absolute
+                left: -20px
+                bottom: -10px
+
+        h2.small
+            color: green
+
+        p
+            color: white
+            line-height: 1.5
+            font-size: 20px
+            margin-bottom: 20px
+
+        a
+            color: green
+
+            &:hover
+                color: yellow
+
+
+        ul
+            padding-left: 20px
+            box-sizing: border-box
+            list-style-type: disc
+            li
+                color: white
+                font-size: 20px
+                margin-bottom 15px
+                line-height: 1.3
+
+
+        .thanks__icon
+            width: 105px
+            height 105px
+            margin: 30px auto
+
+        .thanks__text
+            margin: 30px auto 0 auto
+
+        .thanks__btn
+            flexbox()
+            flex-center()
+            margin: 30px auto 50px auto
+
+
+/* PRESS ======================================= */
+.press
+    flexbox()
+    align-items: flex-start
+
+    .press__col
+        width: 50%
+        box-sizing()
+        padding: 0 50px 50px 50px
+
+        &:last-child
+            border-left: 1px solid white015
+            position relative
+
+    .press__btn
+        flexbox()
+
+    
+    .pressKit__row
+        flexbox()
+        flex-flow: row nowrap
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 50px
+
+        &:last-child
+            margin-bottom: 0
+
+    .pressKit__col
+        width: 45%
+        flexbox()
+        align-items: center
+        justify-content: flex-start
+        color: white
+        font-size: 14px
+        line-height: 1.5
+
+
+    .pressKit__item
+        width: 100%
+        height 100%
+        flexbox()
+        flex-center()
+        box-sizing()
+        padding: 40px
+        border: 1px solid white015
+        position relative
+
+        &:hover
+            img
+                transform-scale(.9)
+
+            .pressKit__mask
+                opacity 1
+
+        img
+            object-fit: contain
+            width: 100%
+            height auto
+            transition(.3s)
+
+    .pressKit__mask
+        flexbox()
+        flex-center()
+        position: absolute
+        top: 0
+        bottom: 0
+        left 0
+        right 0
+        background: black08
+        opacity 0
+        transition(.3s)
+        z-index 2
+
+        svg path
+            stroke: green
+
+
+
+.sponsorForm
+    width 100%
+    margin: 30px auto 0 auto
+    max-width 600px
+
+    .sponsorForm__item
+        flexbox()
+        flex-flow: column nowrap
+        margin-bottom 40px
+        text-align: left
+
+        > label
+            font-size: 14px
+            color: green
+
+            &:after
+                content: '*'
+                color: red
+                margin-left 6px
+                font-weight bold
+
+        > input
+            height 40px
+            width: 100%
+            background-color transparent
+            border: none
+            border-bottom 1px solid white03
+            color: white
+            font-size: 14px
+            transition(.3s)
+
+        > input[type="submit"]
+            flexbox()
+            flex-center()
+            border-radius(40px)
+            height 40px
+            box-sizing()
+            padding: 0 40px
+            color: white
+            background-color transparent
+            border: 1px solid green
+            align-self: center
+            width: auto
+            transition: background-color .3s ease-in-out
+            cursor pointer
+
+            &:hover
+                background-color green
+
+        > select
+            margin-top: 10px
+            height: 30px
+            background-color: transparent
+            border: none
+            border-bottom: 1px solid white03
+            border-radius: 0
+            outline: none
+            color: white
+            -webkit-appearance: none
+            font-size: 14px
+
+        > input,
+        > select
+            &:focus
+                border-color green
+
+        span
+            color: white
+            font-size: 12px
+
+        a
+            color: yellow
+
+            &:hover
+                text-decoration: underline
+
+
+        .sponsorForm__status:empty
+            display: none
+
+        .sponsorForm__status
+            border: 1px solid red
+            border-radius: 20px
+            box-sizing()
+            padding: 20px
+
+            p
+                font-size: 16px !important
+                color: red !important
+                line-height: 40px !important
+                margin-bottom: 10px !important
+
+                &:last-child
+                    margin-bottom: 0 !important

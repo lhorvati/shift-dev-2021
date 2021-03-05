@@ -1,0 +1,122 @@
+/* WHO.STYL ======================================= */
+
+#who
+    position relative
+    padding: 100px 0
+
+.who
+    width: 100%
+    border: 1px solid yellow
+    border-radius(5px)
+    padding: 32px 40px
+    box-sizing()
+    text-align: left
+    flexbox()
+    justify-content: space-between
+    flex-flow: row wrap
+    position relative
+
+    h2
+        color: yellow
+        font-size: 60px
+        margin-top: 20px
+
+    p
+        font-size: 16px
+        line-height: 1.5
+        font-family: font2
+        color: white
+
+
+    .who__col
+        flex: 1 1 auto
+
+        &:first-child
+            max-width: 780px
+
+        &:last-child
+            flexbox()
+            flex-center()
+
+    .who-wrap
+        width: 100%
+        margin-top: 30px
+        flexbox()
+        flex-flow: row wrap
+        position relative
+        justify-content: space-between
+
+    .who__list
+        width: 100%
+        flexbox()
+        flex-flow: row wrap
+        flex-center()
+
+        .who__list-item
+            cursor pointer
+            margin: 20px 34px
+
+            &:first-child
+                margin: 20px 34px 20px 0
+
+            &:hover img
+                filter: grayscale(0)
+                opacity 1
+
+            img
+                filter: grayscale(100%)
+                opacity .7
+                transition(.3s)
+                max-width: 110px
+                max-height: 50px
+
+    .who__more
+        font-size: 14px
+        font-family: font2
+        color: darkBlue
+        //color: white
+        //animation: pulse 3s infinite
+        //background: transparent
+        background: yellow
+        border: 1px solid yellow
+        padding: 12px 20px
+        border-radius(50px)
+
+        @keyframes pulse 
+            0%
+                color: yellow
+            60% 
+                color: darkBlue
+                background: yellow
+            100% 
+                color: yellow
+
+
+
+    &:after
+        content: ''
+        display block
+        width: 100%
+        height 100%
+        background: url(../img/backgrounds/newsletter-bg.svg) center no-repeat
+        background-size: contain
+        position absolute
+        bottom: 60px
+        left: -50px
+        z-index -1
+
+
+
+
+
+@media only screen and (max-width: 1201px), only screen and (max-device-width: 1201px) {
+
+    .who .who__col:first-child {
+        max-width: 100%
+    }
+
+    .who .who__more {
+        margin-top: 50px
+    }
+
+}

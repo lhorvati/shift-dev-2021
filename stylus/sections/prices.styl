@@ -1,0 +1,98 @@
+/* PRICES.STYL ======================================= */
+
+#prices
+    padding: 70px 0
+    background-color blue
+
+    .prices
+        flexbox()
+        justify-content: space-between
+        box-sizing()
+        max-width 850px
+        margin: 0 auto
+
+        .prices__left
+            flexbox()
+            justify-content: space-between
+            width: 400px
+
+        .prices__right
+            flexbox()
+            flex-center()
+
+            p
+                color: white
+                font-family: font2
+                font-size: 32px
+                text-align: center
+                text-transform: uppercase
+
+        .prices__item
+            flexbox()
+            flex-flow: column nowrap
+
+        .prices__top
+            margin-bottom 20px
+            position: relative
+            height: 40px
+            min-width: 40px
+
+        .prices__bot
+            color: white
+            font-family: font2
+            font-size: 14px
+            opacity .75
+
+        .prices__digit
+            color: white
+            font-family: font2
+            font-size: 32px
+            text-align: center
+            text-transform: uppercase
+
+    // Countdown style
+    .countdown.remove 
+        animation: hide-countdown 1s cubic-bezier(0, 0.9, 0.56, 1.2) forwards
+        overflow: hidden
+
+    .new, .old, .current 
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+    .new
+        animation: show-new 0.4s cubic-bezier(0, 0.9, 0.5, 1.2) forwards
+
+    .old
+        animation: hide-old 0.1s cubic-bezier(0, 0.9, 0.56, 1.2) forwards
+
+    .countdown section 
+        position: relative
+
+
+
+    @keyframes hide-countdown {
+        to {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+    @keyframes show-new {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.9);
+        }
+        100% {
+            transform: translate(-50%, -50%);
+        }
+    }
+    @keyframes hide-old {
+        0% {
+            transform: translate(-50%, -50%);
+        }
+        100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+    }

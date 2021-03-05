@@ -1,0 +1,194 @@
+/* BUTTON.STYL ======================================= */
+
+/* Button 1 ========================== */
+.btn
+	flexbox()
+	flex-center()
+	box-sizing()
+	height: 36px
+	padding: 2px 30px 0 30px
+	font-family: font1
+	font-size: 13px
+	font-weight: 500
+	text-align: center
+	border-radius(36px)
+	transition(.5s)
+	cursor: pointer
+
+
+	&.gradient
+		text-transform: uppercase
+		background: green
+		position relative
+		z-index: 1
+
+		span
+			color: white
+			font-family: font1
+			font-size: 12px
+			font-weight: 600
+			text-align: center
+			position: relative
+			z-index 2
+
+			&.gradient--large
+				font-size: 15px
+
+		&:before
+			content: ''
+			width: 100%
+			height 100%
+			border-radius(36px)
+			background: green
+			background: linear-gradient(to right, blue 0%,green 100%)
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right 0
+			opacity 1
+			z-index 2
+			transition(.5s)
+
+		&:hover:before
+			opacity 0
+
+	&.blue
+		text-transform: uppercase
+		color: white
+		background: transparent
+		border: 1px solid blue
+
+		&.fill
+			background: blue
+			font-size: 11px
+			font-weight: 600
+
+			&:hover
+				background: transparent
+
+		&.empty
+			font-weight: 700
+			font-size: 12px
+
+			&:hover
+				background: blue
+				color: white
+
+		&.small
+			font-size: 10px
+			font-weight: 600
+			color: blue
+
+			&:hover
+				color: white
+				background: blue
+
+		&:hover
+			background: white
+			color: blue
+
+
+	&.green
+		text-transform: uppercase
+		color: white
+		background: transparent
+		border: 1px solid green
+
+		&.fill
+			background: green
+			font-size: 11px
+			font-weight: 600
+
+			&:hover
+				background: transparent
+
+		&.empty
+			font-weight: 700
+			font-size: 12px
+
+			&:hover
+				color: white !important
+
+		&.small
+			font-size: 10px
+			font-weight: 600
+			color: green
+
+			&:hover
+				color: white
+				background: green
+
+		&:hover
+			background: green
+			color: white
+
+
+	&.yellow
+		text-transform: uppercase
+		color: yellow
+		background: transparent
+		border: 1px solid yellow
+
+		&.fill
+			background: yellow
+			font-size: 11px
+			font-weight: 600
+
+			&:hover
+				color: white
+				background: transparent
+
+		&.empty
+			font-weight: 700
+			font-size: 12px
+
+			&:hover
+				color: white
+				background: yellow
+
+		&.small
+			font-size: 10px
+			font-weight: 600
+			color: yellow
+
+			&:hover
+				color: white
+				background: yellow
+
+		&:hover
+			background: white
+			color: yellow
+
+	&.link
+		font-size: 12px
+		font-weight: 600
+		color: white
+
+		&:hover
+			color: green
+
+	&.text
+		padding: 0 0 2px 0
+		border-radius(0)
+		text-transform: uppercase
+		font-size: 10px
+		font-weight: 600
+		color: white
+		border-bottom: 2px solid green
+		height auto
+
+		&:hover
+			color: green
+
+
+
+
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+
+	.btn span {
+		bottom: -1px
+	}
+
+}

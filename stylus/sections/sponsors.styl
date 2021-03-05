@@ -1,0 +1,210 @@
+/* SPONSORS.STYL ======================================= */
+
+#sponsors,
+#sponsors2
+    padding-top: 50px
+
+    h1
+        font-size: 41px
+
+    h3
+        font-size: 14px
+        font-weight: 600
+        color: white
+        flexbox()
+        align-items: center
+
+    .title-desc
+        color: white
+        margin-top: 70px
+
+        a
+            text-decoration: none
+            color: white
+            transition(.3s)
+
+            &:hover
+                color: green
+
+.sponsors-wrap,
+.sponsors-row,
+.sponsors-row-all,
+.sponsors-row-all-center,
+.sponsors,
+.sponsors__group,
+.sponsors__item
+    flexbox()
+
+.sponsors
+    flex-flow: column nowrap
+
+    .sponsors__group
+        flex-flow: row wrap
+
+.sponsors-wrap
+    flex-flow: column nowrap
+    padding: 50px 0
+    position relative
+
+    .sponsors-row
+        flex-flow: row wrap
+        justify-content: flex-start
+        margin: 60px 0
+        align-items: flex-start
+
+        &:first-child
+            margin-top: 60px
+
+        &.sponsors-row--multiple
+            .sponsors
+                margin-right: 50px
+
+                &:last-child
+                    margin-right 0
+
+
+
+    .sponsors-row-all
+        flex-flow: row wrap
+        justify-content: flex-start
+        margin: 0
+        align-items: flex-start
+
+        .sponsors
+            width: 100%
+
+        .sponsors:not(:last-child)
+            margin: 0 60px 60px 0
+
+        .sponsors__group
+            flex-center()
+
+            .sponsors__item
+                margin: 20px
+
+
+
+    .sponsors-row-all-center
+        flex-flow: row wrap
+        flex-center()
+        margin: 0
+
+        .sponsors
+            width: auto
+
+        .sponsors:not(:first-child)
+            margin: 0 0 0 40px
+
+        .sponsors__group
+            //justify-content: flex-start
+            justify-content: center
+
+        .sponsors__item:last-child
+            margin-right: 0
+
+        .sponsors__item a
+            img
+                filter: grayscale(100%)
+                margin-top 10px
+                opacity .7
+
+            &:hover
+                img
+                    filter: grayscale(0)
+                    opacity 1
+
+
+
+
+
+    .sponsors__item
+        flex-center()
+        margin: 0 40px 0 0
+
+        img
+            opacity .5
+            transition(.2s)
+            width: 90px
+
+
+        a:hover img
+            opacity 1
+
+#sponsorsSlider6
+    .sponsors__item
+        img
+            width: 50px
+
+
+.sponsorsSlider
+    width: 100%
+    position relative
+
+    // overwrite slick to align center all logos
+    .slick-track
+        flexbox()
+        flex-center()
+
+    .sponsorsSlider__btn
+        width: 40px
+        height 40px
+        background: url('../img/icons/triangle.svg') center no-repeat
+        background-size: 8px
+        position: absolute
+        top: 50%
+        margin-top: -5px
+        cursor pointer
+        opacity: .5
+        transition(.2s)
+
+        &:hover
+            opacity 1
+
+        &.btn-left1,
+        &.btn-left2,
+        &.btn-left3,
+        &.btn-left4,
+        &.btn-left6
+            left -42px
+            transform: rotate(180deg)
+        &.btn-right1,
+        &.btn-right2,
+        &.btn-right3,
+        &.btn-right4,
+        &.btn-right6
+            right -42px
+
+
+
+.stars
+    margin: 0 10px 2px 10px
+    flexbox()
+
+    svg
+        margin: 0 1px
+        width: 12px
+        height 12px
+
+    &.stars5
+        svg path
+            fill: blue
+    &.stars4
+        svg path
+            fill: green
+    &.stars3
+        svg path
+            fill: tiel
+    &.stars2
+        svg path
+            fill: red
+    &.stars1
+        svg path
+            fill: yellow
+
+
+.sponsors__bg
+    width: 100px
+    height: 100px
+    position: absolute
+    bottom: 0px
+    right: 50px

@@ -1,0 +1,182 @@
+/* SPEAKERS.STYL ======================================= */
+
+#speakers
+    background: darkBlue url(../img/backgrounds/speakers-bg.svg) top 110px center no-repeat
+    background-size: contain
+    padding-top: 50px
+    padding-bottom: 50px
+    color: white
+
+
+    .container
+        flexbox()
+        flex-flow: column nowrap
+        text-align: center
+        position relative
+
+    .speakers-bg
+        position absolute
+        bottom: -48px
+        right: 0
+        background: url(../img/backgrounds/speakers-bg-bot.svg) center no-repeat
+        background-size: auto
+        width: 384px
+        height 248px
+        z-index -1
+
+
+    .speakers-content
+        display: none
+
+    .speakers-wrap
+        flexbox()
+        flex-flow: row wrap
+
+    .more-comming
+        margin: 50px auto
+        width: 100%
+        text-align: center
+
+
+    .speaker
+        flexbox()
+        flex-flow: column nowrap
+        justify-content: flex-start
+        width: 25%
+        box-sizing()
+        padding: 50px 5px
+        text-align: left
+
+        &:hover
+            .speaker__image img
+                filter: grayscale(0)
+
+        &:nth-child(5n+1)
+            .speaker__name
+                color: green
+            .speaker__more-btn
+                border-color: green
+                &:hover,
+                &:active
+                    color: green
+            .social:hover svg path
+                fill green
+        &:nth-child(5n+2)
+            .speaker__name
+                color: yellow
+            .speaker__more-btn
+                border-color: yellow
+                &:hover,
+                &:active
+                    color: yellow
+            .social:hover svg path
+                fill yellow
+        &:nth-child(5n+3)
+            .speaker__name
+                color: tiel
+            .speaker__more-btn
+                border-color: tiel
+                &:hover,
+                &:active
+                    color: tiel
+            .social:hover svg path
+                fill tiel
+        &:nth-child(5n+4)
+            .speaker__name
+                color: red
+            .speaker__more-btn
+                border-color: red
+                &:hover,
+                &:active
+                    color: red
+            .social:hover svg path
+                fill red
+        &:nth-child(5n+5)
+            .speaker__name
+                color: blue
+            .speaker__more-btn
+                border-color: blue
+                &:hover,
+                &:active
+                    color: blue
+            .social:hover svg path
+                fill blue
+
+        .speaker__image
+            width: 100%
+            height: auto
+            overflow: hidden
+            cursor pointer
+
+            img
+                filter: grayscale()
+                transition(.3s)
+
+        .speaker__name
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: white
+            font-size: 15px
+            font-weight: 700
+            margin: 18px 0 8px 0
+            text-align: left
+
+        .speaker__title
+            font-family: font2
+            font-size: 12px
+            color: white
+            line-height: 1.7
+            text-align: left
+            font-style: italic
+            min-height: 40px
+
+            span
+                font-size: 12px
+                font-family: font2
+                font-weight: 600
+                color: white
+                font-style: italic
+
+        .speaker__logo
+            flexbox()
+            align-items: center
+            height: 50px
+
+
+        .btn.blue.small
+            margin-top: 30px
+
+
+        .speaker__more
+            display: none
+
+
+        .speaker__social
+            margin: 20px 0
+            flexbox()
+            flex-center()
+
+            .social
+                margin: 0 30px
+
+                svg path
+                    fill: white
+                    transition(.3s)
+
+                // hover is handled in line 49
+
+        .social__bio
+            margin-top: 20px
+            font-size: 14px
+            line-height: 25px
+            font-family: font2
+            color: white
+
+        .speaker__more-btn
+            text-align: right
+            justify-content: flex-end
+            border: none
+            border-top: 2px solid red
+            padding: 10px 0
+            margin-top: 10px
+            color: white

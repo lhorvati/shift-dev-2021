@@ -1,0 +1,164 @@
+/* ABOUT.STYL ======================================= */
+
+#about
+    padding-top: 100px
+
+    .container
+        flexbox()
+        flex-flow: column nowrap
+        position: relative
+
+    .about__row
+        flexbox()
+        align-items: center
+        justify-content: space-between
+        flex-flow: row wrap
+        padding-bottom: 120px
+        // padding-bottom: 30px
+
+        &:last-child
+            padding-bottom: 0
+
+        &:nth-child(even)
+            flex-flow: row-reverse wrap
+
+
+    .about__bg0,
+    .about__bg1,
+    .about__bg2,
+    .about__bg3
+        position: absolute
+        z-index 1
+
+    .about__bg0
+        width: 200px
+        height 200px
+        border-radius: 100%
+        background-color: red
+        left -20%
+        top: 50%
+        z-index -1
+
+    .about__bg1
+        top: 0
+        left: 40%
+        z-index 0
+        img
+            opacity .04
+
+    .about__bg2
+        left -90px
+        top: -33px
+        z-index -1
+
+    .about__bg3
+        left: -340px
+        top: -100px
+
+
+    .about__img1
+        flexbox()
+        align-items: center
+        position relative
+        width: 50%
+        height auto
+        // width: 505px
+        // height 340px
+        // width: 475px
+        //height 317px
+
+
+
+
+    .about__group
+        position relative
+        width: 47%
+        box-sizing()
+
+        &.about__group--blue
+            .about__small span,
+            h2.small span
+                color: blue
+            .aboutNumber__line
+                background-color: blue
+
+        &.about__group--green
+            .about__small span,
+            h2.small span
+                color: green
+            .aboutNumber__line
+                background-color: green
+                
+        &.about__group--red
+            .about__small span,
+            h2.small span
+                color: red
+            .aboutNumber__line
+                background-color: red
+
+        &.about__group--yellow
+            .about__small span,
+            h2.small span
+                color: yellow
+            .aboutNumber__line
+                background-color: yellow
+
+        .about__icon
+            margin-bottom: 20px
+
+            svg path
+                opacity .5
+
+        .about__small
+            font-size: 11px
+            font-family: font2
+            color: white
+            line-height: 1.5
+
+        h2
+            color: white
+            margin-top: 32px
+
+        p
+            font-size: 13px
+            font-family: font2
+            // line-height: 30px
+            line-height: 1.7
+            color: white
+
+        .about__bg
+            position absolute
+            left: -300px
+            top: 50px
+            width: 517px
+            height 332px
+            background: url("../img/backgrounds/about-bg.svg") center no-repeat
+            background-size: 517px
+            z-index 5
+
+        .about__arrow
+            position absolute
+            left: 370px
+            bottom: -105px
+            width: 119px
+            height 97px
+            background: url("../img/icons/icon-arrow.svg") center no-repeat
+            background-size: 119px
+            z-index 7
+
+        .aboutNumber
+            flexbox()
+            flex-flow: row nowrap
+            align-items: center
+            margin-top: 40px
+
+            .aboutNumber__num
+                font-family: font2
+                font-size: 11px
+                color: white
+
+            .aboutNumber__line
+                width: 112px
+                height 2px
+                margin-left: 33px
+

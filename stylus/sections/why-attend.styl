@@ -1,0 +1,165 @@
+/* WHY ATTEND.STYL ======================================= */
+
+#why-attend
+    padding: 100px 0 40px 0
+
+    h2
+        font-size: 40px
+
+.whyAttend
+    background: darkBlue
+
+    .container
+        flexbox()
+        justify-content: center
+
+    .sectionFiller.sectionFiller--darkBlue
+        height 100px
+        background: darkBlue
+
+    .whyAttend__col
+        width: 50%
+        flexbox()
+        flex-center()
+        height 388px
+        overflow hidden
+
+    .whyAttend__box
+        position relative
+        background: white
+        box-sizing()
+        flexbox()
+        justify-content: center
+        flex-flow: column nowrap
+
+        h2
+            margin: 0 0 30px 0
+
+        p
+            font-size: 16px
+            line-height 1.7
+
+        a
+            color: blue
+
+            &:hover
+                color: darkBlue1
+
+    &.whyAttend--right
+        background: darkBlue
+        background: -moz-linear-gradient(left, darkBlue 0%, darkBlue 49%, white 49%, white 100%)
+        background:linear-gradient(to right, darkBlue 0%, darkBlue 49%, white 49%, white 100%)
+
+        .whyAttend__box
+            margin-left: 50px
+
+    &.whyAttend--left
+        background: darkBlue
+        background: -moz-linear-gradient(left, white 0%, white 51%, darkBlue 51%, darkBlue 100%)
+        background:linear-gradient(to right, white 0%, white 51%, darkBlue 51%, darkBlue 100%)
+
+        .whyAttend__box
+            margin-right 50px
+
+        .container
+            flex-flow: row-reverse
+
+    &.whyAttend--vertical
+        margin-top: 80px
+
+        .container
+            flexbox()
+            flex-flow: column wrap
+
+        .whyAttend-wrap
+            margin-top 10px
+            flexbox()
+            flex-flow: row wrap
+            justify-content: space-between
+            align-items: flex-start
+
+            .whyAttend__col
+                width: 48%
+                height auto
+
+            p,li
+                font-size: 16px
+                color: white
+                line-height: 1.7
+
+            ul
+                padding-left: 20px
+
+            li
+                position: relative
+
+                &:before
+                    content: ""
+                    position: absolute
+                    width: 6px
+                    height: 6px
+                    background: green
+                    border-radius: 20px
+                    display: inline-block
+                    left: -20px
+                    top: 9px
+
+
+
+    .whyAttend__img
+        width: 100%
+        height: auto
+        flexbox()
+        flex-center()
+
+    .whyAttend__name
+        font-size: 18px
+        font-weight 500
+        color: green
+        margin-top: 30px
+
+    .whyAttend__price
+        font-size: 22px
+        font-weight 600
+        color: green
+        margin: 10px 0 30px 0
+
+    .whyAttend__btn
+        margin-top 30px
+        flexbox()
+
+
+
+
+@media only screen and (max-width: 981px), only screen and (max-device-width: 981px) {
+
+    #why-attend {
+        padding: 40px 0
+    }
+    #why-attend h2 {
+        font-size: 32px
+        margin: 60px 0 0 0
+    }
+    .whyAttend.whyAttend--right,
+    .whyAttend.whyAttend--left {
+        background: darkBlue
+    }
+    .whyAttend.whyAttend--left .whyAttend__box,
+    .whyAttend.whyAttend--right .whyAttend__box {
+        margin: 0
+        padding: 20px
+    }
+    .whyAttend .whyAttend__col {
+        width: 100%
+        height auto
+    }
+    .whyAttend.whyAttend--left .container {
+        flex-flow: row wrap
+    }
+    .whyAttend .sectionFiller.sectionFiller--darkBlue {
+        height 50px
+    }
+
+
+
+}

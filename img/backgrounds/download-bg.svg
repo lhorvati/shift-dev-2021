@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1287px" height="650px" viewBox="0 0 1287 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>download-bg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="final" transform="translate(-52.000000, -5882.000000)">
+            <g id="BG-+-visual-2" transform="translate(-180.000000, 586.000000)">
+                <g id="BG-+-visual">
+                    <g id="download-bg" transform="translate(232.000000, 5296.000000)">
+                        <path d="M223.5,650 C205.550484,650 191,635.449516 191,617.5 C191,599.550484 205.550484,585 223.5,585 C241.449516,585 256,599.550484 256,617.5 C256,635.449516 241.449516,650 223.5,650" id="Fill-32" fill="#FF697E"></path>
+                        <path d="M1282,270 C1279.23844,270 1277,267.761397 1277,265.000103 C1277,262.238603 1279.23844,260 1282,260 C1284.76156,260 1287,262.238603 1287,265.000103 C1287,267.761397 1284.76156,270 1282,270" id="Fill-18" fill="#017FFF"></path>
+                        <path d="M1195.5,503 C1185.28224,503 1177,494.717169 1177,484.500381 C1177,474.282831 1185.28224,466 1195.5,466 C1205.71776,466 1214,474.282831 1214,484.500381 C1214,494.717169 1205.71776,503 1195.5,503" id="Fill-18" fill="#0FD895"></path>
+                        <path d="M1104.5,176 C1103.11922,176 1102,174.880699 1102,173.500052 C1102,172.119301 1103.11922,171 1104.5,171 C1105.88078,171 1107,172.119301 1107,173.500052 C1107,174.880699 1105.88078,176 1104.5,176" id="Fill-18" fill="#FF697E"></path>
+                        <path d="M2.5,444 C1.11922141,444 0,442.880699 0,441.500052 C0,440.119301 1.11922141,439 2.5,439 C3.88077859,439 5,440.119301 5,441.500052 C5,442.880699 3.88077859,444 2.5,444" id="Fill-18" fill="#017FFF"></path>
+                        <circle id="Oval-5" fill="#FFCF6E" fill-rule="nonzero" cx="242" cy="136" r="136"></circle>
+                        <path d="M243,95 L692.347,354.098" id="Stroke-6" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
